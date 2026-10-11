@@ -1,0 +1,17 @@
+MemoLine is built on Tendedero
+===============================
+
+The interaction — screenshots hung on a clothesline above the macOS menu bar,
+the rope, the aluminium clips, the sway in the breeze, and the reveal-and-
+retract behaviour — comes from Tendedero:
+
+    https://github.com/alejandrobujan/tendedero
+    Copyright (c) 2026 Alejandro Buján
+    MIT licensed
+
+MemoLine was built on top of that work. Parts of the source (the rope, the
+line's layout, the panel and shortcut plumbing) are derived from it.
+
+Tendedero's licence covers its source code only: it grants no rights to the
+Tendedero name or its icon. MemoLine therefore carries its own name and its
+own icon, and is not affiliated with Tendedero or endorsed by its author.

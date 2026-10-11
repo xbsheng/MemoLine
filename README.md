@@ -153,4 +153,4 @@ affiliated with it.
 
 ## License
 
-MIT, see [LICENSE](LICENSE).
+MIT, see [LICENSE](LICENSE). Where it came from is in [NOTICE](NOTICE).
