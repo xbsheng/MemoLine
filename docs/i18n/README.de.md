@@ -63,11 +63,22 @@ Die Punktreihe unten wechselt das Papier, am Zettel und im Editor zugleich.
 
 ## Installieren
 
-`MemoLine.app` aus der [letzten Version](../../releases/latest) laden oder selbst
-bauen:
+`MemoLine.zip` aus der [letzten Version](../../releases/latest) laden, entpacken und **MemoLine.app** nach Programme ziehen.
+
+Die App ist nur ad hoc signiert, ohne Apple Developer ID, also sagt macOS beim ersten Start, es könne den Entwickler nicht überprüfen. Einmal durchlassen:
+
+- **macOS 15 oder neuer** — **Systemeinstellungen › Datenschutz & Sicherheit**, runter zu Sicherheit, neben MemoLine auf **Trotzdem öffnen**.
+- **Älter** — Rechtsklick auf die App, **Öffnen**.
+- **Ohne Klicks** — `xattr -dr com.apple.quarantine /Applications/MemoLine.app`
+
+Danach öffnet sie wie jede andere App. Sie verlangt keine Berechtigungen: kein Bildschirmmitschnitt, keine Bedienungshilfen, kein Netzwerk.
+
+### Oder selbst bauen
+
+macOS 13 oder neuer und eine Swift-Toolchain. Xcode ist optional.
 
 ```sh
-git clone <this repo>
+git clone https://github.com/xbsheng/MemoLine.git
 cd MemoLine
 scripts/build-app.sh        # erzeugt build/MemoLine.app, universal
 open build/MemoLine.app

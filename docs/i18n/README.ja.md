@@ -59,10 +59,22 @@ macOS のメニューバーの下、物干しロープにメモを掛けてお�
 
 ## インストール
 
-[最新リリース](../../releases/latest)から `MemoLine.app` を入手するか、自分でビルドします：
+[最新リリース](../../releases/latest)から `MemoLine.zip` を落として解凍し、**MemoLine.app** を「アプリケーション」へドラッグします。
+
+Apple の Developer ID を取っていない ad-hoc 署名なので、初回だけ macOS が開発元を確認できないと言います。一度だけ許可してください：
+
+- **macOS 15 以降**：「システム設定 › プライバシーとセキュリティ」の「セキュリティ」で、MemoLine の横の**このまま開く**を押す
+- **それ以前**：アプリを右クリックして**開く**
+- **クリックしたくない場合**：`xattr -dr com.apple.quarantine /Applications/MemoLine.app`
+
+以後は普通のアプリです。権限は一切要求しません：画面収録も、アクセシビリティも、通信もなし。
+
+### 自分でビルドする
+
+macOS 13 以降と Swift ツールチェーン（Xcode は任意）。
 
 ```sh
-git clone <this repo>
+git clone https://github.com/xbsheng/MemoLine.git
 cd MemoLine
 scripts/build-app.sh        # build/MemoLine.app（ユニバーサル）を作る
 open build/MemoLine.app

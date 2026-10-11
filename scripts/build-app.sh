@@ -6,7 +6,9 @@ cd "$(dirname "$0")/.."
 
 CONFIG="${1:-release}"
 APP="build/MemoLine.app"
-VERSION="1.0.0"
+# The release workflow passes the tag, so the bundle carries the version it
+# was published as.
+VERSION="${MEMOLINE_VERSION:-1.0.0}"
 
 # A universal binary, so it runs on Apple silicon and on Intel Macs, from
 # macOS 13 Ventura onwards.
@@ -75,4 +77,4 @@ else
   codesign --force --deep --sign - "$APP" >/dev/null
   echo "Signed ad hoc (no Developer ID found)"
 fi
-echo "Built $APP"
+echo "Built $APP ($VERSION)"

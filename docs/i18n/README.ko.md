@@ -59,10 +59,22 @@ macOS 메뉴 막대 아래 빨랫줄에 메모를 걸어 둡니다.
 
 ## 설치
 
-[최신 릴리스](../../releases/latest)에서 `MemoLine.app` 을 받거나 직접 빌드합니다:
+[최신 릴리스](../../releases/latest)에서 `MemoLine.zip` 을 받아 풀고 **MemoLine.app** 을 응용 프로그램 폴더로 끌어다 놓으세요.
+
+Apple Developer ID 없이 ad-hoc 서명만 했기 때문에, 처음 한 번은 macOS 가 개발자를 확인할 수 없다고 합니다. 한 번만 허용하면 됩니다:
+
+- **macOS 15 이상**: 시스템 설정 › 개인정보 보호 및 보안 → 보안에서 MemoLine 옆의 **확인 없이 열기**
+- **그 이전**: 앱을 오른쪽 클릭하고 **열기**
+- **클릭 없이**: `xattr -dr com.apple.quarantine /Applications/MemoLine.app`
+
+그 뒤로는 평범한 앱입니다. 권한은 전혀 요구하지 않습니다: 화면 기록도, 손쉬운 사용도, 네트워크도 없습니다.
+
+### 직접 빌드하기
+
+macOS 13 이상과 Swift 툴체인(Xcode 는 선택).
 
 ```sh
-git clone <this repo>
+git clone https://github.com/xbsheng/MemoLine.git
 cd MemoLine
 scripts/build-app.sh        # build/MemoLine.app (유니버설) 생성
 open build/MemoLine.app

@@ -59,10 +59,22 @@
 
 ## 安装
 
-从[最新发布](../../releases/latest)下载 `MemoLine.app`，或者自己构建：
+从[最新发布](../../releases/latest)下载 `MemoLine.zip`，解压后把 **MemoLine.app** 拖进「应用程序」。
+
+应用是 ad-hoc 签名的（Apple 开发者 ID 要年费），所以第一次打开时 macOS 会说无法验证开发者。放行一次即可：
+
+- **macOS 15 及以上**：「系统设置 › 隐私与安全性」→ 往下找到「安全性」→ 点 MemoLine 旁边的**仍要打开**
+- **更早的系统**：右键点应用，选**打开**
+- **不想点**：`xattr -dr com.apple.quarantine /Applications/MemoLine.app`
+
+之后就和普通应用一样。它不要任何权限：不录屏、不要辅助功能、不联网。
+
+### 或者自己构建
+
+需要 macOS 13 以上和 Swift 工具链，Xcode 可选。
 
 ```sh
-git clone <this repo>
+git clone https://github.com/xbsheng/MemoLine.git
 cd MemoLine
 scripts/build-app.sh        # 产出 build/MemoLine.app，通用二进制
 open build/MemoLine.app

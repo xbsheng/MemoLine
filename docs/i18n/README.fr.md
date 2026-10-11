@@ -64,11 +64,22 @@ l'éditeur à la fois.
 
 ## Installer
 
-Téléchargez `MemoLine.app` depuis la [dernière version](../../releases/latest), ou
-compilez-le :
+Téléchargez `MemoLine.zip` depuis la [dernière version](../../releases/latest), décompressez-le et glissez **MemoLine.app** dans Applications.
+
+L'app est signée ad hoc, sans Developer ID Apple : au premier lancement, macOS dira qu'il ne peut pas vérifier le développeur. Laissez passer une fois :
+
+- **macOS 15 ou plus** — **Réglages du système › Confidentialité et sécurité**, descendez à Sécurité et cliquez **Ouvrir quand même** à côté de MemoLine.
+- **Plus ancien** — clic droit sur l'app, puis **Ouvrir**.
+- **Sans cliquer** — `xattr -dr com.apple.quarantine /Applications/MemoLine.app`
+
+Ensuite elle s'ouvre comme n'importe quelle app. Elle ne demande aucune autorisation : ni enregistrement d'écran, ni accessibilité, ni réseau.
+
+### Ou compilez-la
+
+macOS 13 ou plus et une toolchain Swift. Xcode est optionnel.
 
 ```sh
-git clone <this repo>
+git clone https://github.com/xbsheng/MemoLine.git
 cd MemoLine
 scripts/build-app.sh        # produit build/MemoLine.app, universel
 open build/MemoLine.app

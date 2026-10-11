@@ -61,10 +61,22 @@ bolinhas embaixo troca o papel, no recado e no editor ao mesmo tempo.
 
 ## Instalar
 
-Baixe o `MemoLine.app` da [última versão](../../releases/latest), ou compile:
+Baixe o `MemoLine.zip` da [última versão](../../releases/latest), descompacte e arraste o **MemoLine.app** para Aplicativos.
+
+O app é assinado ad hoc, sem um Developer ID da Apple, então na primeira vez o macOS vai dizer que não pode verificar o desenvolvedor. Libere uma vez:
+
+- **macOS 15 ou mais recente** — **Ajustes do Sistema › Privacidade e Segurança**, desça até Segurança e clique em **Abrir assim mesmo** ao lado do MemoLine.
+- **Anteriores** — clique com o botão direito no app e escolha **Abrir**.
+- **Sem cliques** — `xattr -dr com.apple.quarantine /Applications/MemoLine.app`
+
+Depois ele abre como qualquer app. Não pede permissão nenhuma: nem gravação de tela, nem acessibilidade, nem rede.
+
+### Ou compile
+
+macOS 13 ou mais recente e um toolchain Swift. Xcode é opcional.
 
 ```sh
-git clone <this repo>
+git clone https://github.com/xbsheng/MemoLine.git
 cd MemoLine
 scripts/build-app.sh        # gera build/MemoLine.app, universal
 open build/MemoLine.app

@@ -62,11 +62,22 @@ puntos de abajo cambia el papel, en la nota y en el editor a la vez.
 
 ## Instalar
 
-Descarga `MemoLine.app` de la [última versión](../../releases/latest), o
-compílalo:
+Descarga `MemoLine.zip` de la [última versión](../../releases/latest), descomprímelo y arrastra **MemoLine.app** a Aplicaciones.
+
+La app está firmada ad hoc, sin un Developer ID de Apple, así que la primera vez macOS dirá que no puede verificar al desarrollador. Déjalo pasar una vez:
+
+- **macOS 15 o posterior** — abre **Ajustes del Sistema › Privacidad y seguridad**, baja a Seguridad y pulsa **Abrir de todos modos** junto a MemoLine.
+- **Anteriores** — haz clic derecho en la app y elige **Abrir**.
+- **Sin clics** — `xattr -dr com.apple.quarantine /Applications/MemoLine.app`
+
+Después se abre como cualquier app. No pide ningún permiso: ni grabación de pantalla, ni accesibilidad, ni red.
+
+### O compílala
+
+macOS 13 o posterior y un toolchain de Swift. Xcode es opcional.
 
 ```sh
-git clone <this repo>
+git clone https://github.com/xbsheng/MemoLine.git
 cd MemoLine
 scripts/build-app.sh        # crea build/MemoLine.app, universal
 open build/MemoLine.app

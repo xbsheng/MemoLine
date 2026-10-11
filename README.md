@@ -64,11 +64,28 @@ card and in the editor at once.
 
 ## Install
 
-Download `MemoLine.app` from the [latest release](../../releases/latest), or
-build it:
+### Download it
+
+Grab `MemoLine.zip` from the [latest release](../../releases/latest), unzip it
+and drag **MemoLine.app** into Applications.
+
+The app is signed ad hoc, not with a paid Apple Developer ID, so the first time
+macOS will say it cannot verify the developer. Let it through once:
+
+- **macOS 15 or later** — open **System Settings › Privacy & Security**, scroll
+to Security, and click **Open Anyway** next to MemoLine.
+- **Earlier** — right-click the app and choose **Open**.
+- **Or skip the clicking** — `xattr -dr com.apple.quarantine /Applications/MemoLine.app`
+
+After that it opens like any other app. It asks for no permissions at all: no
+screen recording, no accessibility, no network.
+
+### Or build it
+
+macOS 13 or later and a Swift toolchain. Xcode is optional.
 
 ```sh
-git clone <this repo>
+git clone https://github.com/xbsheng/MemoLine.git
 cd MemoLine
 scripts/build-app.sh        # makes build/MemoLine.app, universal
 open build/MemoLine.app
@@ -83,10 +100,21 @@ swift run MemoLine --self-check     # layout, reordering, storage
 swift scripts/check-strings.swift   # every language has every string
 ```
 
-Both run in CI on every push, along with the app bundle build.
+Both run in CI on every push, along with the app bundle build. Tag a commit
+`v1.0.0` and CI publishes `MemoLine.zip` as a release.
 
 To have it start with your Mac, drag the app into Applications and turn on
 **Open at login** in the menu bar.
+
+### For maintainers: the signing question
+
+The two clicks above are the whole cost of not paying Apple. A Developer ID
+certificate ($99/year) plus notarization removes them:
+
+```sh
+SIGN_IDENTITY="Developer ID Application: You (TEAMID)" scripts/build-app.sh
+# then notarize the zip with notarytool and staple it
+```
 
 <br>
 

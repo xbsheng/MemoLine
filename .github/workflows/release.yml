@@ -1,0 +1,48 @@
+name: release
+
+# Push a tag and this builds the app and attaches it to a GitHub release, so
+# people can download MemoLine.zip instead of building it.
+#
+#   git tag v1.0.0 && git push origin v1.0.0
+#
+# The app is signed ad hoc, not with a Developer ID, so anyone downloading it
+# has to let macOS open it once. The README says how.
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        run: scripts/build-app.sh release
+        env:
+          MEMOLINE_VERSION: ${{ github.ref_name }}
+
+      - name: Check the translations
+        run: swift scripts/check-strings.swift
+
+      - name: Self-check
+        run: swift run MemoLine --self-check
+
+      # ditto, not zip: it keeps the code signature and the executable bit.
+      - name: Zip the app
+        run: ditto -c -k --sequesterRsrc --keepParent build/MemoLine.app build/MemoLine.zip
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: build/MemoLine.zip
+          body: |
+            Download `MemoLine.zip`, unzip it and drag **MemoLine.app** into
+            Applications.
+
+            The app is not notarized, so macOS asks once whether to trust it —
+            see [Install](https://github.com/${{ github.repository }}#install)
+            for the two clicks. macOS 13 or later.
