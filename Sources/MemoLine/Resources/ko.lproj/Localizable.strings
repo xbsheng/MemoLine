@@ -1,0 +1,71 @@
+/* 한국어. 키는 코드의 L("...")에 적힌 영어 그대로입니다. */
+
+/* Line */
+"MemoLine, memos on a clothesline" = "MemoLine, 빨랫줄에 메모를";
+"No memos yet. Press ⌃⌥N to write one." = "아직 메모가 없습니다. ⌃⌥N 을 눌러 쓰세요.";
+"New memo" = "새 메모";
+"Copied" = "복사됨";
+
+/* Paper */
+"Cream" = "크림";
+"Butter" = "버터";
+"Blush" = "블러시";
+"Sky" = "하늘";
+"Mint" = "민트";
+
+/* Card menu */
+"Edit" = "편집";
+"Copy" = "복사";
+"New Memo" = "새 메모";
+"Paper" = "종이";
+"Move Left" = "왼쪽으로 이동";
+"Move Right" = "오른쪽으로 이동";
+"Take Down" = "내리기";
+"Take down everything to the left" = "왼쪽 모두 내리기";
+"Take down everything to the right" = "오른쪽 모두 내리기";
+
+/* Menu bar */
+"Show line" = "줄 보기";
+"Hide line" = "줄 숨기기";
+"Take everything down" = "모두 내리기";
+"Take everything down?" = "모두 내릴까요?";
+"Every memo on the line will be deleted." = "줄에 있는 메모가 모두 삭제됩니다.";
+"Delete" = "삭제";
+"Cancel" = "취소";
+"Bring the line down" = "줄을 내리는 방법";
+"When the pointer rests in the menu bar" = "포인터가 메뉴 막대에 머물 때";
+"When something new hangs" = "새 메모가 걸릴 때";
+"Over full screen apps" = "전체 화면 앱 위에도";
+"Keep on line" = "줄에 남길 개수";
+"As many as fit" = "화면에 들어가는 만큼";
+"%d memos" = "%d장";
+"Size" = "크기";
+"Small" = "작게";
+"Medium" = "보통";
+"Large" = "크게";
+"Shortcut" = "단축키";
+"%@ to show the line" = "%@ 줄 보기";
+"%@ for a new memo" = "%@ 새 메모";
+"Change Shortcut…" = "단축키 변경…";
+"Change Shortcut" = "단축키 변경";
+"None" = "없음";
+"Space" = "스페이스";
+"Press the new shortcut" = "새 단축키를 누르세요";
+"Escape cancels. Delete removes the shortcut." = "Esc 는 취소, Delete 는 단축키 삭제입니다.";
+"Sounds" = "소리";
+"Open at login" = "로그인 시 열기";
+"Could not change the login setting" = "로그인 항목을 변경할 수 없습니다";
+"Move MemoLine to the Applications folder and try again." = "MemoLine 을 응용 프로그램 폴더로 옮긴 뒤 다시 시도하세요.";
+"Quit MemoLine" = "MemoLine 종료";
+
+/* Edit menu (never drawn, but it carries ⌘C and the rest) */
+"Undo" = "실행 취소";
+"Redo" = "실행 복귀";
+"Cut" = "오려두기";
+"Paste" = "붙여넣기";
+"Select All" = "전체 선택";
+
+/* Editor */
+"Memo" = "메모";
+"Saved as you type" = "입력하는 대로 저장";
+"Done" = "완료";

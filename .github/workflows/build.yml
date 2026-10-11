@@ -1,0 +1,30 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        run: swift build
+
+      - name: Check the translations
+        run: swift scripts/check-strings.swift
+
+      - name: Self-check
+        run: swift run MemoLine --self-check
+
+      - name: Build the app bundle
+        run: scripts/build-app.sh release
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MemoLine.app
+          path: build/MemoLine.app

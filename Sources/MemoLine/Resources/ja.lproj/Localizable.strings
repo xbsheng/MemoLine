@@ -1,0 +1,71 @@
+/* 日本語。キーはコード中の L("...") に書かれた英語そのもの。 */
+
+/* Line */
+"MemoLine, memos on a clothesline" = "MemoLine、メモを物干しロープに";
+"No memos yet. Press ⌃⌥N to write one." = "まだメモがありません。⌃⌥N で書けます。";
+"New memo" = "新しいメモ";
+"Copied" = "コピーしました";
+
+/* Paper */
+"Cream" = "クリーム";
+"Butter" = "バター";
+"Blush" = "ピンク";
+"Sky" = "スカイ";
+"Mint" = "ミント";
+
+/* Card menu */
+"Edit" = "編集";
+"Copy" = "コピー";
+"New Memo" = "新しいメモ";
+"Paper" = "紙";
+"Move Left" = "左へ移動";
+"Move Right" = "右へ移動";
+"Take Down" = "外す";
+"Take down everything to the left" = "左側をすべて外す";
+"Take down everything to the right" = "右側をすべて外す";
+
+/* Menu bar */
+"Show line" = "ロープを出す";
+"Hide line" = "ロープをしまう";
+"Take everything down" = "すべて外す";
+"Take everything down?" = "すべて外しますか？";
+"Every memo on the line will be deleted." = "ロープにあるメモはすべて削除されます。";
+"Delete" = "削除";
+"Cancel" = "キャンセル";
+"Bring the line down" = "ロープを出すきっかけ";
+"When the pointer rests in the menu bar" = "ポインタがメニューバーにとどまったとき";
+"When something new hangs" = "新しいメモが掛かったとき";
+"Over full screen apps" = "フルスクリーンのアプリの上にも出す";
+"Keep on line" = "ロープに残す数";
+"As many as fit" = "画面に入るだけ";
+"%d memos" = "%d 枚";
+"Size" = "サイズ";
+"Small" = "小";
+"Medium" = "中";
+"Large" = "大";
+"Shortcut" = "ショートカット";
+"%@ to show the line" = "%@ でロープを出す";
+"%@ for a new memo" = "%@ で新しいメモ";
+"Change Shortcut…" = "ショートカットを変更…";
+"Change Shortcut" = "ショートカットの変更";
+"None" = "なし";
+"Space" = "スペース";
+"Press the new shortcut" = "新しいショートカットを押してください";
+"Escape cancels. Delete removes the shortcut." = "Esc で取り消し、Delete でショートカットを外します。";
+"Sounds" = "効果音";
+"Open at login" = "ログイン時に開く";
+"Could not change the login setting" = "ログイン項目を変更できませんでした";
+"Move MemoLine to the Applications folder and try again." = "MemoLine を「アプリケーション」フォルダに移動してから、もう一度お試しください。";
+"Quit MemoLine" = "MemoLine を終了";
+
+/* Edit menu (never drawn, but it carries ⌘C and the rest) */
+"Undo" = "取り消す";
+"Redo" = "やり直す";
+"Cut" = "カット";
+"Paste" = "ペースト";
+"Select All" = "すべて選択";
+
+/* Editor */
+"Memo" = "メモ";
+"Saved as you type" = "入力しながら保存";
+"Done" = "完了";

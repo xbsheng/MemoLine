@@ -1,0 +1,72 @@
+/* English. Each key is the English text exactly as written in L("...") in
+   the code. Every language has the same keys. */
+
+/* Line */
+"MemoLine, memos on a clothesline" = "MemoLine, memos on a clothesline";
+"No memos yet. Press ⌃⌥N to write one." = "No memos yet. Press ⌃⌥N to write one.";
+"New memo" = "New memo";
+"Copied" = "Copied";
+
+/* Paper */
+"Cream" = "Cream";
+"Butter" = "Butter";
+"Blush" = "Blush";
+"Sky" = "Sky";
+"Mint" = "Mint";
+
+/* Card menu */
+"Edit" = "Edit";
+"Copy" = "Copy";
+"New Memo" = "New Memo";
+"Paper" = "Paper";
+"Move Left" = "Move Left";
+"Move Right" = "Move Right";
+"Take Down" = "Take Down";
+"Take down everything to the left" = "Take down everything to the left";
+"Take down everything to the right" = "Take down everything to the right";
+
+/* Menu bar */
+"Show line" = "Show line";
+"Hide line" = "Hide line";
+"Take everything down" = "Take everything down";
+"Take everything down?" = "Take everything down?";
+"Every memo on the line will be deleted." = "Every memo on the line will be deleted.";
+"Delete" = "Delete";
+"Cancel" = "Cancel";
+"Bring the line down" = "Bring the line down";
+"When the pointer rests in the menu bar" = "When the pointer rests in the menu bar";
+"When something new hangs" = "When something new hangs";
+"Over full screen apps" = "Over full screen apps";
+"Keep on line" = "Keep on line";
+"As many as fit" = "As many as fit";
+"%d memos" = "%d memos";
+"Size" = "Size";
+"Small" = "Small";
+"Medium" = "Medium";
+"Large" = "Large";
+"Shortcut" = "Shortcut";
+"%@ to show the line" = "%@ to show the line";
+"%@ for a new memo" = "%@ for a new memo";
+"Change Shortcut…" = "Change Shortcut…";
+"Change Shortcut" = "Change Shortcut";
+"None" = "None";
+"Space" = "Space";
+"Press the new shortcut" = "Press the new shortcut";
+"Escape cancels. Delete removes the shortcut." = "Escape cancels. Delete removes the shortcut.";
+"Sounds" = "Sounds";
+"Open at login" = "Open at login";
+"Could not change the login setting" = "Could not change the login setting";
+"Move MemoLine to the Applications folder and try again." = "Move MemoLine to the Applications folder and try again.";
+"Quit MemoLine" = "Quit MemoLine";
+
+/* Edit menu (never drawn, but it carries ⌘C and the rest) */
+"Undo" = "Undo";
+"Redo" = "Redo";
+"Cut" = "Cut";
+"Paste" = "Paste";
+"Select All" = "Select All";
+
+/* Editor */
+"Memo" = "Memo";
+"Saved as you type" = "Saved as you type";
+"Done" = "Done";

@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+.AppleDouble
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# The app bundle the build script makes
+build/
+DerivedData/
+*.xcodeproj
+*.dSYM
+*.dmg
