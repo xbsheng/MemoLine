@@ -7,8 +7,9 @@ cd "$(dirname "$0")/.."
 CONFIG="${1:-release}"
 APP="build/MemoLine.app"
 # The release workflow passes the tag, so the bundle carries the version it
-# was published as.
+# was published as: v1.2.3 tags become a 1.2.3 bundle version.
 VERSION="${MEMOLINE_VERSION:-1.0.0}"
+VERSION="${VERSION#v}"
 
 # A universal binary, so it runs on Apple silicon and on Intel Macs, from
 # macOS 13 Ventura onwards.
