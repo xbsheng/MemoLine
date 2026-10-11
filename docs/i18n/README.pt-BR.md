@@ -1,6 +1,4 @@
-<picture>
-  <img src="../images/line.png" alt="Quatro recados em papel colorido, presos por prendedores de alumínio num varal fino, com um botão + e outro para guardar o varal na ponta.">
-</picture>
+<img src="../images/desktop.jpg" alt="Mesa do Mac: cinco recados em papel colorido pendurados num varal fino logo abaixo da barra de menus.">
 
 # MemoLine
 
@@ -28,7 +26,7 @@ Grátis, licença MIT, macOS 13 ou mais recente. Sem conta, sem rede, sem permis
 
 ## Um gesto para cada coisa
 
-| | |
+| Gesto | O que faz |
 |:--|:--|
 | Ponteiro parado na barra de menus | O varal desce naquela tela |
 | Clique num recado | Escrever aquele recado |

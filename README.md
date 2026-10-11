@@ -1,6 +1,4 @@
-<picture>
-  <img src="docs/images/line.png" alt="Four memo cards on coloured paper, held by aluminium clips on a thin line, with a plus and a hide button at the end of the rope.">
-</picture>
+<img src="docs/images/desktop.jpg" alt="Mac desktop: five memo cards on coloured paper hang from a thin line just under the menu bar.">
 
 # MemoLine
 
@@ -30,7 +28,7 @@ language.
 
 ## One gesture each
 
-| | |
+| Gesture | What it does |
 |:--|:--|
 | Rest the pointer in the menu bar | The line comes down on that screen |
 | Click a card | Write that memo |
@@ -128,7 +126,7 @@ permissions. The app writes only this file.
 
 ## Inside
 
-| | |
+| File | What it does |
 |:--|:--|
 | `App.swift` | Entry point; `--self-check` runs the checks instead of the app |
 | `AppDelegate.swift` | Menu bar, shortcuts, bringing the line down and tucking it away |

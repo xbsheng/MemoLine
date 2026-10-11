@@ -1,6 +1,4 @@
-<picture>
-  <img src="../images/line.png" alt="Quatre notes en papier coloré, retenues par des pinces en aluminium sur une fine corde, avec un bouton + et un bouton pour ranger la ligne au bout.">
-</picture>
+<img src="../images/desktop.jpg" alt="Bureau du Mac : cinq notes en papier coloré pendues à une fine corde juste sous la barre de menus.">
 
 # MemoLine
 
@@ -29,7 +27,7 @@ autorisation.
 
 ## Un geste, une action
 
-| | |
+| Geste | Ce que ça fait |
 |:--|:--|
 | Pointeur posé dans la barre de menus | La corde descend sur cet écran |
 | Clic sur une note | Écrire cette note |

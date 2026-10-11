@@ -1,6 +1,4 @@
-<picture>
-  <img src="../images/line.png" alt="Vier Notizzettel aus farbigem Papier, mit Aluminiumklammern an einer dünnen Leine, am Ende ein Plus und ein Wegpacken-Knopf.">
-</picture>
+<img src="../images/desktop.jpg" alt="Mac-Schreibtisch: fünf Notizzettel aus farbigem Papier hängen an einer dünnen Leine direkt unter der Menüleiste.">
 
 # MemoLine
 
@@ -29,7 +27,7 @@ Berechtigungen.
 
 ## Eine Geste, eine Sache
 
-| | |
+| Geste | Was passiert |
 |:--|:--|
 | Zeiger in der Menüleiste ruhen lassen | Die Leine kommt auf diesem Bildschirm herunter |
 | Klick auf einen Zettel | Diese Notiz schreiben |

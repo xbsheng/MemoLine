@@ -1,6 +1,4 @@
-<picture>
-  <img src="../images/line.png" alt="Cuatro notas de papel de colores, sujetas con pinzas de aluminio a un cordel fino, con un botón + y otro para guardar la línea al final.">
-</picture>
+<img src="../images/desktop.jpg" alt="Escritorio del Mac: cinco notas de papel de colores cuelgan de un cordel fino justo bajo la barra de menús.">
 
 # MemoLine
 
@@ -28,7 +26,7 @@ Gratis, con licencia MIT, macOS 13 o posterior. Sin cuenta, sin red, sin permiso
 
 ## Un gesto para cada cosa
 
-| | |
+| Gesto | Qué hace |
 |:--|:--|
 | Dejar el puntero en la barra de menús | El cordel baja en esa pantalla |
 | Clic en una nota | Escribir esa nota |
